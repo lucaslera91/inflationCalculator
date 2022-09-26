@@ -1,0 +1,6 @@
+.main__list__capsule{
+    border: 1px solid rgb(154, 151, 151);
+    border-radius: 5px;
+    min-width: 75px;
+    margin: 5px;
+}

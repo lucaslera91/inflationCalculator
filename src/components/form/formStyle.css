@@ -1,0 +1,24 @@
+.main__form__inputs{
+    display: flex;
+    justify-content: space-between;
+}
+.main__form input {
+    border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 15px;
+    width: 100%;
+
+}
+.main__form__button {
+    border: 1px solid black;
+    width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 10px;
+    background-color: rgba(186, 231, 186, 0.661);
+}
+
+.main__form__middle{
+    margin: 0 5px 0 5px;
+}
