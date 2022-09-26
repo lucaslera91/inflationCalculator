@@ -15,13 +15,11 @@ const DuesProvider = ({ children }) => {
 
   useEffect(() => {
     calcular();
-    console.log(data);
   }, [data]);
 
   const calcular = () => {
     const { inflacion, initialPrice, cuotas } = data;
     let auxSuma = parseInt(initialPrice / cuotas);
-    console.log('suma', auxSuma)
     const listaDeCuotas = [
       { cuota: 1, monto: parseInt(initialPrice / cuotas) },
     ];
@@ -33,14 +31,10 @@ const DuesProvider = ({ children }) => {
       });
 
       auxSuma += aux;
-      console.log('sumafinal', auxSuma)
     }
     setCalculos([...listaDeCuotas]);
     setSuma(auxSuma);
   };
-  useEffect(() => {
-    console.log(calculos);
-  }, [calculos]);
 
   return (
     <DuesContext.Provider

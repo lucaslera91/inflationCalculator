@@ -5,8 +5,6 @@ import "./listStyle.css";
 
 const List = () => {
   const { calculos } = DuesConsumer();
-  console.log(calculos);
-
   return (
     <>
       {calculos.length > 0 && calculos[0].monto !== 0 && (
